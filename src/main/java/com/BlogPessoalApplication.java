@@ -1,4 +1,5 @@
-package com.blogPessoal.blogPessoal;
+/* Classe Principal do projeto! */
+package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -1,4 +1,4 @@
-package com.blogPessoal.blogPessoal;
+package controller;
 
 import java.util.List;
 
@@ -15,8 +15,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/postagens")
+import model.Postagem;
+import repository.PostagemRepository;
+
+@RestController						
+@RequestMapping("/postagens")		// define que todo o código seguinte será executado a partir desse end-point!
 @CrossOrigin("*")
 public class PostagemController {
 	

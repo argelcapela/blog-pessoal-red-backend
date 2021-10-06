@@ -1,4 +1,5 @@
-package com.blogPessoal.blogPessoal;
+/* Model: Abstração/Classes que representam tabelas no banco de dados. */
+package model;
 
 import java.util.List;
 
@@ -13,19 +14,19 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
-@Entity
-@Table(name = "tb_tema")
+@Entity // define que a classe é uma entidade
+@Table(name = "tb_tema")  // cria tabela tb_tema
 public class Tema {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id // chave primária
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	//  auto incremente
 	private long codTema;
 	
-	@NotNull
+	@NotNull // não permite vazio
 	private String descricao;
 	
-	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("tema")
+	@OneToMany(mappedBy = "fk_tema", cascade = CascadeType.ALL) // lado um da relação // define uma relação de 1 para muitos.// 1 tema para muitas postagens  
+	@JsonIgnoreProperties("tema") // evita a recursividade infinita
 	private List<Postagem> postagem;
 
 	public long getCodTema() {

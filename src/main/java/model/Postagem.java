@@ -1,4 +1,5 @@
-package com.blogPessoal.blogPessoal;
+/* Model: Abstração/Classes que representam tabelas no banco de dados. */
+package model;
 
 import java.sql.Date;
 
@@ -14,23 +15,23 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.validation.constraints.NotNull;
 
-@Entity
-@Table(name = "tb_postagem")
+@Entity // descreve que a tabela será uma entidade
+@Table(name = "tb_postagem") // cria a tabela tb_postagem
 public class Postagem {
 	// attributes
-		@Id
-		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		@Id		// chave primária
+		@GeneratedValue(strategy = GenerationType.IDENTITY) // auto incremente
 		private Long idPostagem;
-		@NotNull
+		@NotNull	// não aceita vazio
 		@Size(min = 5, max = 100)
 		private String titulo;
-		@NotNull
+		@NotNull	// não aceita vazio
 		private String texto;
-		@NotNull
-		private Date data = new java.sql.Date(System.currentTimeMillis());
-		@ManyToOne
-		@JsonIgnoreProperties("postagem")
-		private Tema tema;
+		@NotNull	// não aceita vazio
+		private Date data = new java.sql.Date(System.currentTimeMillis()); // pega o horário do sistema no momento do cadastro
+		@ManyToOne // cria uma chave estrangeira/ define que essa classe é o muitos da relação. ("uma postagem só pode ter um tema, porém um tema pode ter muitas postagens!")
+		@JsonIgnoreProperties("postagem") // evita a recursividade infinita entre postagem e tema!!
+		private Tema fk_tema;
 	
 	// encapsulation
 		public Long getIdPostagem() {
@@ -58,10 +59,10 @@ public class Postagem {
 			this.data = data;
 		}
 		public Tema getTema() {
-			return tema;
+			return fk_tema;
 		}
 		public void setTema(Tema tema) {
-			this.tema = tema;
+			this.fk_tema = tema;
 		}
 	
 	

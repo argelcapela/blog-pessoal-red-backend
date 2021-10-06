@@ -1,4 +1,4 @@
-package com.blogPessoal.blogPessoal;
+package controller;
 
 import java.util.List;
 
@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import model.Tema;
+import repository.TemaRepository;
 
 @RestController
 @RequestMapping("/temas")
