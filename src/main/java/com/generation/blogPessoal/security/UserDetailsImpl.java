@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.security;
+package com.generation.blogPessoal.security;
 
 import java.util.Collection;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.geneletron.blogPessoal.model.Usuario;
+import com.generation.blogPessoal.model.Usuario;
 
 public class UserDetailsImpl implements UserDetails {
 	

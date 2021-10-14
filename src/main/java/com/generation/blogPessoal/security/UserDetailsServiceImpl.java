@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.security;
+package com.generation.blogPessoal.security;
 
 import java.util.Optional;
 
@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.geneletron.blogPessoal.model.Usuario;
-import com.geneletron.blogPessoal.repository.UsuarioRepository;
+import com.generation.blogPessoal.model.Usuario;
+import com.generation.blogPessoal.repository.UsuarioRepository;
 
 public class UserDetailsServiceImpl implements UserDetailsService {
 

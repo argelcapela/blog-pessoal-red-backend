@@ -1,10 +1,10 @@
-package com.geneletron.blogPessoal.repository;
+package com.generation.blogPessoal.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.geneletron.blogPessoal.model.Usuario;
+import com.generation.blogPessoal.model.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> 
 {

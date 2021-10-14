@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.controller;
+package com.generation.blogPessoal.controller;
 
 
 
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.geneletron.blogPessoal.model.Usuario;
-import com.geneletron.blogPessoal.model.UsuarioLogin;
-import com.geneletron.blogPessoal.service.UsuarioService;
+import com.generation.blogPessoal.model.Usuario;
+import com.generation.blogPessoal.model.UsuarioLogin;
+import com.generation.blogPessoal.service.UsuarioService;
 
 @RestController
 @RequestMapping("/usuarios")
@@ -28,7 +28,6 @@ public class UsuarioController {
 	@PostMapping("/logar")
 	public ResponseEntity<UsuarioLogin> Autentication(@RequestBody Optional<UsuarioLogin> user)
 	{
-		System.out.println("Testando!");
 		return usuarioService.Logar(user).map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
 	}

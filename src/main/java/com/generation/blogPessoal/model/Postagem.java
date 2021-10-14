@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.model;
+package com.generation.blogPessoal.model;
 
 /* Model: Abstração/Classes que representam tabelas no banco de dados. */
 

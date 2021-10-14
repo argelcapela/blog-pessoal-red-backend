@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.security;
+package com.generation.blogPessoal.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -34,6 +34,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 			.antMatchers("/usuarios/logar").permitAll()
 			.antMatchers("/usuarios/cadastrar").permitAll()
+			//.antMatchers("/postagens").permitAll()
 			.anyRequest().authenticated()
 			.and().httpBasic()
 			.and().sessionManagement()

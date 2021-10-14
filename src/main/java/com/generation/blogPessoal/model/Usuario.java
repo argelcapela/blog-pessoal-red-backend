@@ -1,13 +1,16 @@
-package com.geneletron.blogPessoal.model;
+package com.generation.blogPessoal.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
 
 import com.sun.istack.NotNull;
+
+import io.swagger.annotations.ApiModelProperty;
 
 @Entity 
 @Table(name = "tb_usuario")
@@ -19,9 +22,12 @@ public class Usuario {
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String nomeCompleto;
+	
+	//@ApiModelProperty(example = "email@email.com.br")
+	//@Email(message = "O atributo Usuário deve ser um email válido!")
 	@NotNull
-	@Size(min = 5, max = 100)
 	private String login;
+	
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String senhaUsuario;

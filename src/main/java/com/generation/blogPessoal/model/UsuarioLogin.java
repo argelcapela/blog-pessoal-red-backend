@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.model;
+package com.generation.blogPessoal.model;
 
 public class UsuarioLogin {
 	
