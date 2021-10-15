@@ -6,7 +6,7 @@ public class UsuarioLogin {
 	private String nomeCompleto;
 	private String login;
 	private String senhaUsuario;
-	private String token;
+	private String token; // nosso token de acesso
 	
 	
 	public long getIdUsuario() {

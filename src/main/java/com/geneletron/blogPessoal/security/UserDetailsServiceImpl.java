@@ -6,11 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.geneletron.blogPessoal.model.Usuario;
 import com.geneletron.blogPessoal.repository.UsuarioRepository;
 
-public class UserDetailsServiceImpl implements UserDetailsService {
+@Service
+public class UserDetailsServiceImpl implements UserDetailsService { 
+/* It is used by the DaoAuthenticationProvider to load details about the user during authentication. */
 
 	@Autowired
 	private UsuarioRepository userRepository;

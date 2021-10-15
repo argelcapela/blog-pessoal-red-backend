@@ -27,14 +27,22 @@ public class UsuarioService {
 		return repository.save(usuario);
 	}
 	
+	/*public Usuario AtualizarUsuario(Usuario usuario)
+	{
+		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+		
+		String senhaEncoder = encoder.encode(usuario.getSenhaUsuario());
+		usuario.setSenhaUsuario(senhaEncoder);
+		return repository.save(usuario);
+	}*/
+	
 	public Optional<UsuarioLogin> Logar(Optional<UsuarioLogin> user) {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		Optional<Usuario> usuario = repository.findByLogin(user.get().getLogin());
 		
-		
 		if (usuario.isPresent())
 		{
-			if (encoder.matches(user.get().getSenhaUsuario(), usuario.get().getSenhaUsuario()))
+			if (encoder.matches(user.get().getSenhaUsuario(), usuario.get().getSenhaUsuario())) // equipara dois valores(a que vem do json, é a do banco criptografada)
 			{
 				String auth = user.get().getLogin() + ":" + user.get().getSenhaUsuario();
 				byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("US-ASCII")));

@@ -26,8 +26,8 @@ public class Tema {
 	private String descricao;
 	
 	@OneToMany(mappedBy = "fk_tema", cascade = CascadeType.ALL) // lado um da relação // define uma relação de 1 para muitos.// 1 tema para muitas postagens  
-	@JsonIgnoreProperties("tema") // evita a recursividade infinita
-	private List<Postagem> postagem;
+	@JsonIgnoreProperties("fk_tema") // evita a recursividade infinita
+	private List<Postagem> postagens;
 
 	public long getCodTema() {
 		return codTema;
@@ -45,12 +45,14 @@ public class Tema {
 		this.descricao = descricao;
 	}
 
-	public List<Postagem> getPostagem() {
-		return postagem;
+	public List<Postagem> getPostagens() {
+		return postagens;
 	}
 
-	public void setPostagem(List<Postagem> postagem) {
-		this.postagem = postagem;
+	public void setPostagens(List<Postagem> postagens) {
+		this.postagens = postagens;
 	}
+
+	
 	
 }

@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.geneletron.blogPessoal.model.Postagem;
 import com.geneletron.blogPessoal.repository.PostagemRepository;
 
@@ -27,7 +28,7 @@ import com.geneletron.blogPessoal.repository.PostagemRepository;
 @CrossOrigin("*")
 public class PostagemController {
 	
-	@Autowired
+		@Autowired
 		private PostagemRepository r;
 	
 	// PEGA TUDO -  select * from tb_postagem
@@ -55,6 +56,7 @@ public class PostagemController {
 	
 	// INSERIR - insert into tb_postagem (titulo, texto) values (<titulo>, <texto>)
 		@PostMapping
+		@JsonIgnoreProperties("descricao")
 		public ResponseEntity<Postagem> post (@RequestBody Postagem postagem)
 		{
 			return ResponseEntity.status(HttpStatus.CREATED).body(r.save(postagem));

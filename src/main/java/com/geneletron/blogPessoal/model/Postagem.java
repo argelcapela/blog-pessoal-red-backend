@@ -6,6 +6,7 @@ package com.geneletron.blogPessoal.model;
 import java.sql.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -31,12 +32,24 @@ public class Postagem {
 		@NotNull	// não aceita vazio
 		private Date data = new java.sql.Date(System.currentTimeMillis()); // pega o horário do sistema no momento do cadastro
 		@ManyToOne // cria uma chave estrangeira/ define que essa classe é o muitos da relação. ("uma postagem só pode ter um tema, porém um tema pode ter muitas postagens!")
-		@JsonIgnoreProperties("postagem") // evita a recursividade infinita entre postagem e tema!!
+		@JsonIgnoreProperties("postagens") // evita a recursividade infinita entre postagem e tema!!
 		private Tema fk_tema;
+		
+		@ManyToOne
+		@JsonIgnoreProperties("postagens")
+		private Usuario fk_usuario;
 	
 	// encapsulation
+		
+		
 		public Long getIdPostagem() {
 			return idPostagem;
+		}
+		public Usuario getFk_usuario() {
+			return fk_usuario;
+		}
+		public void setFk_usuario(Usuario fk_usuario) {
+			this.fk_usuario = fk_usuario;
 		}
 		public void setIdPostagem(Long idPostagem) {
 			this.idPostagem = idPostagem;
@@ -59,12 +72,13 @@ public class Postagem {
 		public void setData(Date data) {
 			this.data = data;
 		}
-		public Tema getTema() {
+		public Tema getFk_tema() {
 			return fk_tema;
 		}
-		public void setTema(Tema tema) {
-			this.fk_tema = tema;
+		public void setFk_tema(Tema fk_tema) {
+			this.fk_tema = fk_tema;
 		}
+		
 	
 	
 }
