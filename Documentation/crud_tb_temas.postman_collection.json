@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "12607d4d-7d34-434f-9eae-73099357fae3",
+		"name": "crud_tb_temas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByDescricao()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temas/descricao/t",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temas",
+						"descricao",
+						"t"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postTema()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricao\":\"estacas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/temas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putTema()",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codTema\": 1,\r\n    \"descricao\": \"templos brasileiros\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/temas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTema()",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

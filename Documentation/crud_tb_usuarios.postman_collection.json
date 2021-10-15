@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "ab0d4255-eaec-4d16-a29b-9dba3e56e01c",
+		"name": "crud_tb_usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/usuarios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByLogin()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/usuarios/login/j",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"login",
+						"j"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postUsuario (CADASTRAR)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"judas\" ,\r\n    \"nomeCompleto\": \"judas\",\r\n    \"senhaUsuario\": \"judas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/cadastrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putUsuario()",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idUsuario\": 2,\r\n    \"login\": \"presidentepedro\",\r\n    \"nomeCompleto\":\"presidentepedro\",\r\n    \"senhaUsuario\":\"presidentepedro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/atualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"atualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUsuario()",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/usuarios/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

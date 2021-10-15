@@ -40,16 +40,16 @@ public class UsuarioController {
 		return ResponseEntity.ok(usuarioRepository.findAll());
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("/{idUsuario}")
 	public ResponseEntity<Usuario> getById(@PathVariable long idUsuario)
 	{
 		return usuarioRepository.findById(idUsuario).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/login/{login}")
-	public ResponseEntity<Usuario> getById(@PathVariable String idUsuario)
+	public ResponseEntity<Usuario> getById(@PathVariable String login)
 	{
-		return usuarioRepository.findByLogin(idUsuario).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+		return usuarioRepository.findByLoginContainingIgnoreCase(login).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	// LOGIN & CADASTRO

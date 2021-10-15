@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "b63ce291-dd10-41b7-b3c2-fadf972cd024",
+		"name": "crud_tb_postagens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/postagens/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/postagens/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByTitulo()",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/postagens/titulo/j",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens",
+						"titulo",
+						"j"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postPostagem()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"capela de boa esperança\",\r\n    \"texto\":\"muito grande, será um estaca em breve!\",\r\n    \"fk_tema\": {\r\n        \"codTema\" : 3\r\n    },\r\n    \"fk_usuario\": {\r\n        \"idUsuario\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/postagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putPostagem()",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPostagem\": 5,\r\n    \"titulo\":\"templo de são paulo\",\r\n    \"texto\":\"muito bom para conhecer!\",\r\n    \"fk_tema\": {\r\n        \"codTema\" : 2\r\n    },\r\n    \"fk_usuario\": {\r\n        \"idUsuario\" : 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/postagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePostagem()",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amVzdXM6amVzdXM=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/postagens/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagens",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

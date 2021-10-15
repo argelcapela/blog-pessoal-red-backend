@@ -32,9 +32,9 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 		.antMatchers("/usuarios/logar").permitAll()
 		.antMatchers("/usuarios/cadastrar").permitAll()
-		.antMatchers("/postagens").permitAll()
-		.antMatchers("/temas").permitAll()
-		.antMatchers("/usuarios").permitAll()
+		//.antMatchers("/postagens").permitAll()
+		//.antMatchers("/temas").permitAll()
+		//.antMatchers("/usuarios").permitAll()
 		.anyRequest().authenticated()
 		.and().httpBasic()
 		.and().sessionManagement() // somente um login por sessão

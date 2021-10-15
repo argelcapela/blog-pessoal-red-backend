@@ -10,5 +10,5 @@ import com.geneletron.blogPessoal.model.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> 
 {
-	public Optional <Usuario> findByLogin(String login);
+	public Optional <Usuario> findByLoginContainingIgnoreCase(String login);
 }
