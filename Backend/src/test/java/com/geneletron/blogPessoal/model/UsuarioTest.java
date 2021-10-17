@@ -24,7 +24,7 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 public class UsuarioTest {
 	
 	private Usuario usuario;
-	private Usuario usuarioErro = new Usuario();
+	private Usuario usuarioNulo = new Usuario();
 	
 	@Autowired
 	private ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
@@ -33,27 +33,27 @@ public class UsuarioTest {
 	
 	@BeforeEach
 	public void start() {
-		LocalDate data = LocalDate.parse("2000-07-22",
-				DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-		List<Postagem> postagens;
-		usuario = new Usuario();
+		LocalDate data = LocalDate.parse("2000-07-22", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+		usuario = new Usuario(0L, "jesus", "jesus", "jesus", "jesus@gmail.com", data);
 	}
 	
 	@Test
-	@DisplayName("Teste valida atributos não nulos")
+	@DisplayName("✔ Verdadeiro se, nenhum valor nulo ou vazio, tamanho respeitado e formato e-mail respeitado!")
 	void testeValidaAtributos() {
 		
 		Set<ConstraintViolation<Usuario>> violacao = validator.validate(usuario);
 		System.out.println(violacao.toString());
+		
 		assertTrue(violacao.isEmpty());
 	}
 	
 	@Test
-	@DisplayName("Teste não valida atributos nulos")
+	@DisplayName("❌ Falso se, algum valor for nulo ou vazio.")
 	void testeNaoValidaAtributos() {
 		
-		Set<ConstraintViolation<Usuario>> violacao = validator.validate(usuario);
+		Set<ConstraintViolation<Usuario>> violacao = validator.validate(usuarioNulo);
 		System.out.println(violacao.toString());
+		
 		assertTrue(violacao.isEmpty());
 	}
 	

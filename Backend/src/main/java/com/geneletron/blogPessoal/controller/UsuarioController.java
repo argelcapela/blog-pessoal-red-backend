@@ -49,7 +49,7 @@ public class UsuarioController {
 	@GetMapping("/login/{login}")
 	public ResponseEntity<Usuario> getById(@PathVariable String login)
 	{
-		return usuarioRepository.findByLoginContainingIgnoreCase(login).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+		return usuarioRepository.findByLogin(login).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	// LOGIN & CADASTRO
