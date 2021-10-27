@@ -1,2 +1,35 @@
-# gen_blog_pessoal
-Desenvolvido no Bootcamp da Generation Brasil, feito em Spring Boot + Angular + Mysql. Nesse Blog eu posto conteúdos sobre tecnologia e sobre a minha vida.
+﻿<h1 align="center">:file_cabinet: gen_blog_pessoal_backend </h1>
+
+## :memo: Descrição
+Desenvolvido no Bootcamp da Generation Brasil, feito em Spring Boot + Angular + Mysql.
+
+## :books: Funcionalidades
+* <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
+
+## :wrench: Tecnologias utilizadas
+* Tecnologia;
+
+## :rocket: Rodando o projeto
+Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
+```
+<linha de comando>
+```
+
+## :soon: Implementação futura
+* O que será implementado na próxima sprint?
+
+## :handshake: Colaboradores
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/tatialveso">
+        <img src="https://avatars.githubusercontent.com/u/56259137?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
+        <sub>
+          <b>tatialveso</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## :dart: Status do projeto
