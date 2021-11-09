@@ -39,8 +39,13 @@ public class Usuario {
 	@NotNull
 	private LocalDate dataNascimento;
 	
-	@OneToMany(mappedBy = "fk_usuario", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("fk_tema")
+	private String foto;
+	
+	private String tipo;
+	
+	// RELACIONAMENTO PARA USUÁRIO TER MINHAS POSTAGENS
+	@OneToMany(mappedBy = "fk_usuario", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("fk_usuario")
 	private List<Postagem> postagens; 
 	
 	public Usuario(long idUsuario,  String nomeCompleto, String login,  String senhaUsuario, String emailUsuario, LocalDate dataNascimento) {
@@ -99,6 +104,22 @@ public class Usuario {
 	}
 	public void setSenhaUsuario(String senhaUsuario) {
 		this.senhaUsuario = senhaUsuario;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	
 	
