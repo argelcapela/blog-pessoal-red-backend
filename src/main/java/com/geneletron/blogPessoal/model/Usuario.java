@@ -36,7 +36,7 @@ public class Usuario {
 	@NotBlank
 	@Email
 	private String emailUsuario;
-	@NotNull
+	//@NotNull
 	private LocalDate dataNascimento;
 	
 	private String foto;

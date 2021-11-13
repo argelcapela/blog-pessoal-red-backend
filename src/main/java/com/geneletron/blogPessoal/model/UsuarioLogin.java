@@ -1,5 +1,7 @@
 package com.geneletron.blogPessoal.model;
 
+import javax.validation.constraints.Email;
+
 public class UsuarioLogin {
 	
 	private long idUsuario;
@@ -9,8 +11,15 @@ public class UsuarioLogin {
 	private String token; // nosso token de acesso
 	private String tipo;
 	private String foto;
+	private String emailUsuario;
 	
 	
+	public String getEmailUsuario() {
+		return emailUsuario;
+	}
+	public void setEmailUsuario(String emailUsuario) {
+		this.emailUsuario = emailUsuario;
+	}
 	public long getIdUsuario() {
 		return idUsuario;
 	}
