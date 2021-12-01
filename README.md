@@ -1,7 +1,10 @@
-﻿<h1 align="center">:file_cabinet: gen_blog_pessoal_backend </h1>
+<h1 align="center"> blog-pessoal-red-frontend v1.0</h1>
+Link da Documentação do Projeto: https://argelcapela.github.io/blog-pessoal-red-frontend/<br>
+Link do Frontend:  https://blog-pessoal-red.netlify.app/ <br>
+Link do Backend:  https://blog-pessoal-red-backend.herokuapp.com/ <br>
 
 ## :memo: Descrição
-Desenvolvido no Bootcamp da Generation Brasil, feito em Spring Boot + Angular + Mysql.
+Exercício de criação de API. Permite realizar CRUD(s) entre as tabelas TEMA, POSTAGEM e USUÁRIO. Muito útil para praticar requisições e as funcionalidades básicas de uma nova tecnologia. Desenvolvido durante o bootcamp da Generation Brasil.
 
 ## :books: Funcionalidades
 * <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
@@ -22,10 +25,10 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
 <table>
   <tr>
     <td align="center">
-      <a href="http://github.com/tatialveso">
-        <img src="https://avatars.githubusercontent.com/u/56259137?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
+      <a href="http://github.com/argelcapela">
+        <img src="https://avatars.githubusercontent.com/u/79276276?s=400&u=055b803f4708d59eaf50208ba601f85844125757&v=4" width="100px;" alt="Foto de Argel Capela!"/><br>
         <sub>
-          <b>tatialveso</b>
+          <b>Argel Capela</b>
         </sub>
       </a>
     </td>
