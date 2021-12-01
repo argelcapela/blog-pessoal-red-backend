@@ -16,7 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
-import com.geneletron.blogPessoal.model.Usuario;
+import com.argelcapela.blog_pessoal_red_backend.model.Usuario;
+import com.argelcapela.blog_pessoal_red_backend.repository.UsuarioRepository;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)

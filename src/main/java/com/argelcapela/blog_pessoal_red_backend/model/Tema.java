@@ -1,5 +1,5 @@
 /* Model: Abstração/Classes que representam tabelas no banco de dados. */
-package com.geneletron.blogPessoal.model;
+package com.argelcapela.blog_pessoal_red_backend.model;
 
 import java.util.List;
 

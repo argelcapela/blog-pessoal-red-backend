@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.security;
+package com.argelcapela.blog_pessoal_red_backend.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

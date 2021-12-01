@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal;
+package com.argelcapela.blog_pessoal_red_backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

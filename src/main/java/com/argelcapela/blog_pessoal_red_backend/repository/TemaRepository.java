@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.repository;
+package com.argelcapela.blog_pessoal_red_backend.repository;
 
 
 
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.geneletron.blogPessoal.model.Tema;
+import com.argelcapela.blog_pessoal_red_backend.model.Tema;
 
 public interface TemaRepository extends JpaRepository<Tema, Long> {
 	

@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.model;
+package com.argelcapela.blog_pessoal_red_backend.model;
 
 /* Model: Abstração/Classes que representam tabelas no banco de dados. */
 

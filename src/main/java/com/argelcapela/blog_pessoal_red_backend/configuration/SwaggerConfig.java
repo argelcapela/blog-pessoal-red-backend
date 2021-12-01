@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.configuration;
+package com.argelcapela.blog_pessoal_red_backend.configuration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ public class SwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.apis(RequestHandlerSelectors
-				.basePackage("com.geneletron.blogPessoal.controller"))
+				.basePackage("com.argelcapela.blog_pessoal_red_backend.controller"))
 				.paths(PathSelectors.any())
 				.build()
 				.apiInfo(metadata())

@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.repository;
+package com.argelcapela.blog_pessoal_red_backend.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.geneletron.blogPessoal.model.Usuario;
+import com.argelcapela.blog_pessoal_red_backend.model.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> 

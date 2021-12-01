@@ -21,8 +21,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.geneletron.blogPessoal.model.Usuario;
-import com.geneletron.blogPessoal.repository.UsuarioRepository;
+import com.argelcapela.blog_pessoal_red_backend.model.Usuario;
+import com.argelcapela.blog_pessoal_red_backend.repository.UsuarioRepository;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)

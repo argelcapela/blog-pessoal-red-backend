@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.controller;
+package com.argelcapela.blog_pessoal_red_backend.controller;
 
 
 
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.argelcapela.blog_pessoal_red_backend.model.Postagem;
+import com.argelcapela.blog_pessoal_red_backend.repository.PostagemRepository;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.geneletron.blogPessoal.model.Postagem;
-import com.geneletron.blogPessoal.repository.PostagemRepository;
 
 
 

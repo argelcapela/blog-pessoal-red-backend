@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.controller;
+package com.argelcapela.blog_pessoal_red_backend.controller;
 
 
 
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.geneletron.blogPessoal.model.Usuario;
-import com.geneletron.blogPessoal.model.UsuarioLogin;
-import com.geneletron.blogPessoal.repository.UsuarioRepository;
-import com.geneletron.blogPessoal.service.UsuarioService;
+import com.argelcapela.blog_pessoal_red_backend.model.Usuario;
+import com.argelcapela.blog_pessoal_red_backend.model.UsuarioLogin;
+import com.argelcapela.blog_pessoal_red_backend.repository.UsuarioRepository;
+import com.argelcapela.blog_pessoal_red_backend.service.UsuarioService;
 
 @RestController
 @RequestMapping("/usuarios")

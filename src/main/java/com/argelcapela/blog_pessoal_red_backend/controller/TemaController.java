@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.controller;
+package com.argelcapela.blog_pessoal_red_backend.controller;
 
 
 
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.geneletron.blogPessoal.model.Tema;
-import com.geneletron.blogPessoal.repository.TemaRepository;
+import com.argelcapela.blog_pessoal_red_backend.model.Tema;
+import com.argelcapela.blog_pessoal_red_backend.repository.TemaRepository;
 
 @RestController
 @RequestMapping("/temas")

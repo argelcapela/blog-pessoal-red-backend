@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.service;
+package com.argelcapela.blog_pessoal_red_backend.service;
 
 import java.nio.charset.Charset;
 import java.util.Optional;
@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.geneletron.blogPessoal.model.Usuario;
-import com.geneletron.blogPessoal.model.UsuarioLogin;
-import com.geneletron.blogPessoal.repository.UsuarioRepository;
+import com.argelcapela.blog_pessoal_red_backend.model.Usuario;
+import com.argelcapela.blog_pessoal_red_backend.model.UsuarioLogin;
+import com.argelcapela.blog_pessoal_red_backend.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {

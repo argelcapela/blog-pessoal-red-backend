@@ -1,4 +1,4 @@
-package com.geneletron.blogPessoal.model;
+package com.argelcapela.blog_pessoal_red_backend.model;
 
 import java.time.LocalDate;
 import java.util.List;
