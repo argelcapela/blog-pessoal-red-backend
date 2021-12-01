@@ -56,11 +56,11 @@ public class SwaggerConfig {
 
 	private ApiInfo metadata() {		
 		return new ApiInfoBuilder()
-				.title("API - Blog Pessoal")
-				.description("Projeto API Spring - Blog Pessoal")
-				.version("1.0.0")
-				.license("Apache License Version 2.0")
-				.licenseUrl("https://github.com/argelcapela")
+				.title("blog-pessoal-red-backend")
+				.description("Exercício de criação de API. Permite realizar CRUD(s) entre as tabelas TEMA, POSTAGEM e USUÁRIO. Muito útil para praticar requisições e as funcionalidades básicas de uma nova tecnologia. Desenvolvido durante o bootcamp da Generation Brasil.")
+				.version("1.0")
+				.license("")
+				.licenseUrl("https://github.com/argelcapela/gen_blog_pessoal_backend")
 				.contact(contact())
 				.build();
 	}
