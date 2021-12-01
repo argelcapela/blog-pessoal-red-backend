@@ -17,7 +17,6 @@ Exercício de criação de API. Permite realizar CRUD(s) entre as tabelas TEMA, 
 <div style="display: inline_block"><br>
     <img align="center" alt="gel-java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
     <img align="center" alt="gel-spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg">
-    <img align="center" alt="gel-spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
       <img align="center" alt="gel-spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/heroku/heroku-plain-wordmark.svg">
   
 </div>
