@@ -33,8 +33,11 @@ Link da Documentação Frontend(Angular) do Projeto: https://argelcapela.github.
 Link do Frontend:  https://blog-pessoal-red.netlify.app/ <br>
 Link do Backend:  https://blog-pessoal-red-backend.herokuapp.com/ <br>
 
-## :soon: Implementação futura
-* Mesmo projeto porém feito com tecnologias e estilos diferentes, e assim dominar diferentes tecnologias.
+## :soon: Implementação futura (Não sei quando, mas um dia...)
+* <b>blog-pessoal-green:</b> Mesmo projeto, implementado em NodeJS e React, com outra estilização e algumas outras variações.
+* <b>blog-pessoal-blueyellow:</b> Mesmo projeto, implementado em Python(Jango), com outra estilização e algumas outras variações.
+* <b>blog-pessoal-blue:</b> Mesmo projeto, implementado em .NET, com outra estilização e algumas outras variações.
+* <b>blog-pessoal-...:</b> Alguma outra tecnologia relevante pro mercado, para exercitar CRUD.
 
 ## :handshake: Colaboradores
 <table>
