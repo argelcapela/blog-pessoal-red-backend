@@ -6,6 +6,9 @@
 ## :memo: Descrição
 Exercício de criação de API. Permite realizar CRUD(s) entre as tabelas TEMA, POSTAGEM e USUÁRIO. Muito útil para praticar requisições e as funcionalidades básicas de uma nova tecnologia. Desenvolvido durante o bootcamp da Generation Brasil.
 
+##  :art: Estilização
+Inspirado na Joia da Realidade e nas minhas super heroinas favoritas da Marvel: Wanda Maximoff, Capitã Marvel e Xu Xialing.
+
 ## :books: Funcionalidades
 * <b>CADASTRO, LOGIN COM BOA VALIDAÇÃO</b>
 * <b>CRUD TEMA, POSTAGEM e USUÁRIO</b>
