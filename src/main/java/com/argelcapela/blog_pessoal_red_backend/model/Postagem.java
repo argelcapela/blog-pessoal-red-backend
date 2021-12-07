@@ -29,7 +29,7 @@ public class Postagem {
 		private String titulo;
 		@NotNull	// não aceita vazio
 		private String texto;
-
+		private String imagem;
 		//@NotNull	// não aceita vazio
 		private Date data = new java.sql.Date(System.currentTimeMillis()); // pega o horário do sistema no momento do cadastro
 		@ManyToOne // cria uma chave estrangeira/ define que essa classe é o muitos da relação. ("uma postagem só pode ter um tema, porém um tema pode ter muitas postagens!")
@@ -46,7 +46,12 @@ public class Postagem {
 		public Long getIdPostagem() {
 			return idPostagem;
 		}
-
+		public String getImagem() {
+			return imagem;
+		}
+		public void setImagem(String imagem) {
+			this.imagem = imagem;
+		}
 		public Usuario getFk_usuario() {
 			return fk_usuario;
 		}
