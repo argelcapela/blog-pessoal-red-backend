@@ -47,6 +47,12 @@ public class Postagem {
 		public Long getIdPostagem() {
 			return idPostagem;
 		}
+		public String getImagem() {
+			return imagem;
+		}
+		public void setImagem(String imagem) {
+			this.imagem = imagem;
+		}
 		public Usuario getFk_usuario() {
 			return fk_usuario;
 		}
