@@ -43,6 +43,9 @@ public class Postagem {
 	// encapsulation
 		
 		
+		public Postagem() {
+			
+		}
 		public Long getIdPostagem() {
 			return idPostagem;
 		}

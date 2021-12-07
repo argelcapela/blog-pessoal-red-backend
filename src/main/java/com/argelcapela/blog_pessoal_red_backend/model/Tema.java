@@ -29,6 +29,12 @@ public class Tema {
 	@JsonIgnoreProperties("fk_tema") // evita a recursividade infinita
 	private List<Postagem> postagens;
 
+	
+	
+	public Tema() {
+		
+	}
+
 	public long getCodTema() {
 		return codTema;
 	}
