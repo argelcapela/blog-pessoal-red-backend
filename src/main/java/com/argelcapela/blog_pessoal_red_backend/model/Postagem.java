@@ -30,7 +30,7 @@ public class Postagem {
 		@NotNull	// não aceita vazio
 		private String texto;
 		private String imagem;
-		//@NotNull	// não aceita vazio
+		
 		private Date data = new java.sql.Date(System.currentTimeMillis()); // pega o horário do sistema no momento do cadastro
 		@ManyToOne // cria uma chave estrangeira/ define que essa classe é o muitos da relação. ("uma postagem só pode ter um tema, porém um tema pode ter muitas postagens!")
 		@JsonIgnoreProperties("postagens") // evita a recursividade infinita entre postagem e tema!!
