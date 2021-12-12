@@ -3,17 +3,16 @@ package com.argelcapela.blog_pessoal_red_backend.model;
 /* Model: Abstração/Classes que representam tabelas no banco de dados. */
 
 
-import java.sql.Date;
 
+import java.util.Date;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -24,14 +23,16 @@ public class Postagem {
 		@Id		// chave primária
 		@GeneratedValue(strategy = GenerationType.IDENTITY) // auto incremente
 		private Long idPostagem;
-		@NotNull	// não aceita vazio
-		@Size(min = 5, max = 100)
+		//@NotNull	// não aceita vazio
+		//@Size(min = 5, max = 100)
 		private String titulo;
-		@NotNull	// não aceita vazio
+		//@NotNull	// não aceita vazio
 		private String texto;
 		private String imagem;
 		
+		@Temporal(TemporalType.TIMESTAMP) //define a data atual do sistema
 		private Date data = new java.sql.Date(System.currentTimeMillis()); // pega o horário do sistema no momento do cadastro
+		
 		@ManyToOne // cria uma chave estrangeira/ define que essa classe é o muitos da relação. ("uma postagem só pode ter um tema, porém um tema pode ter muitas postagens!")
 		@JsonIgnoreProperties("postagens") // evita a recursividade infinita entre postagem e tema!!
 		private Tema fk_tema;
