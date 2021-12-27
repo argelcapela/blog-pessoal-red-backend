@@ -4,7 +4,7 @@
 -->
 
 <div class="hide-on-portfolio">
-<h1 align="center"> te-amo-mil-milhoes-frontend </h1>
+<h1 align="center"> te-amo-mil-milhoes-backend </h1>
 
 ## :memo: Descrição:
 Um blog com a temática do UCM (Universo Cinematográfico da Marvel). Onde fãs podem compartilhar ideias e sentimentos sobre a Marvel, seu amor, ou seu ódio. Incrível. Feito com a estrutura de API em Java e Spring Boot. Permite realizar CRUD(s) entre as tabelas TEMA, POSTAGEM e USUÁRIO. Muito útil para praticar requisições e as funcionalidades básicas de uma nova tecnologia. 
@@ -48,7 +48,7 @@ Um blog com a temática do UCM (Universo Cinematográfico da Marvel). Onde fãs 
 
 ## :rocket: Rodando o projeto:<br>
     
-<li>Link Github: <a href="https://github.com/argelcapela/te-amo-mil-milhoes-frontend">Link</a></li>
+<li>Link Github: <a href="https://github.com/argelcapela/te-amo-mil-milhoes-backend">Link</a></li>
 <li>Link da Documentação Backend(API/Swagger) do Projeto: <a href="https://argelcapela.github.io/blog-pessoal-red-backend/">Link</a></li>
 <li>Link da Documentação Frontend(Angular) do Projeto: <a href="https://argelcapela.github.io/blog-pessoal-red-backend/">Link</a></li>
 <li>Link do Frontend:  <a href="https://argelcapela.github.io/blog-pessoal-red-backend/">Link</a></li>
