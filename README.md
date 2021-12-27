@@ -1,46 +1,74 @@
-<div align="center" style="font-size:30px;">
-    <img style="width:200px;height:319px;" src="https://github.com/argelcapela/blog-pessoal-red-frontend/blob/main/src/assets/icon/favicon.png?raw=true" alt="logo_toddes">
-   <h1 align="center"> blog-pessoal-red-backend v1.0 (red-reality)</h1>
+<!--<div id="portfolio-slideshow-items" class="hide-on-portfolio" visibility="0">
+    
+</div>
+-->
+
+<div class="hide-on-portfolio">
+<h1 align="center"> te-amo-mil-milhoes-frontend </h1>
+
+## :memo: Descrição:
+Um blog com a temática do UCM (Universo Cinematográfico da Marvel). Onde fãs podem compartilhar ideias e sentimentos sobre a Marvel, seu amor, ou seu ódio. Incrível. Feito com a estrutura de API em Java e Spring Boot. Permite realizar CRUD(s) entre as tabelas TEMA, POSTAGEM e USUÁRIO. Muito útil para praticar requisições e as funcionalidades básicas de uma nova tecnologia. 
 </div>
 
-## :memo: Descrição
-Exercício de criação de API. Permite realizar CRUD(s) entre as tabelas TEMA, POSTAGEM e USUÁRIO. Muito útil para praticar requisições e as funcionalidades básicas de uma nova tecnologia. Desenvolvido durante o bootcamp da Generation Brasil.
+<div class="row">
 
-##  :art: Estilização
-Inspirado na Joia da Realidade e nas minhas super heroinas favoritas da Marvel: Wanda Maximoff, Capitã Marvel e Xu Xialing.
-
-## :books: Funcionalidades
-* <b>CADASTRO, LOGIN COM BOA VALIDAÇÃO</b>
-* <b>CRUD TEMA, POSTAGEM e USUÁRIO</b>
-* <b>ORDENAÇÃO AO RECEBER OS DADOS DO BANCO</b>
-* <b>PESQUISA POR TÍTULO POSTAGEM, NOME TEMA</b>
-* <b>FUNÇÕES ESPECÍFICAS PARA USUÁRIO ADMINISTRADOR</b>
-
-## :wrench: Tecnologias utilizadas
-<div style="display: inline_block"><br>
-    <img align="center" alt="gel-java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-    <img align="center" alt="gel-spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg">
-      <img align="center" alt="gel-spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/heroku/heroku-plain-wordmark.svg">
-  
+## :wrench: Tecnologias utilizadas:<br>
+<div style="display: inline_block">
+<img align="center" alt="gel-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+<img align="center" alt="gel-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+<img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/bootstrap/bootstrap-plain.svg">
+<img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+<img align="center" alt="gel-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/typescript/typescript-plain.svg">
+<img align="center" alt="gel-spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
 </div>
-<br>
 
+<div class="row">
+    
+## :books: Funcionalidades:<br>
+<table class="special-border">
+<tr>
+    <td colspan="2">CADASTRO, LOGIN COM BOA VALIDAÇÃO</td>
+</tr> 
+<tr>
+    <td colspan="2">CRUD TEMA, POSTAGEM e USUÁRIO</td>
+</tr> 
+<tr>
+    <td colspan="2">ORDENAÇÃO AO RECEBER OS DADOS DO BANCO</td>
+</tr> 
+<tr>
+    <td colspan="2">PESQUISA POR TÍTULO POSTAGEM, NOME TEMA</td>
+</tr> 
+<tr>
+    <td colspan="2">FUNÇÕES ESPECÍFICAS PARA USUÁRIO ADMINISTRADOR</td>
+</tr> 
+</table>
+</div>
 
-## :rocket: Rodando o projeto
-Basta acessar os links a seguir: <br>
-Link da Documentação Backend(API/Swagger) do Projeto: https://argelcapela.github.io/blog-pessoal-red-backend/<br>
-Link da Documentação Frontend(Angular) do Projeto: https://argelcapela.github.io/blog-pessoal-red-frontend/<br>
-Link do Frontend:  https://blog-pessoal-red.netlify.app/ <br>
-Link do Backend:  https://blog-pessoal-red-backend.herokuapp.com/ <br>
+<div class="row">
 
-## :soon: Implementação futura (Não sei quando, mas um dia...)
-* blog-pessoal-redblack: Mesmo projeto, implementado em PHP PURO ou LARAVEL, com outra estilização e algumas outras variações.
-* <b>blog-pessoal-green:</b> Mesmo projeto, implementado em NodeJS e React, com outra estilização e algumas outras variações.
-* <b>blog-pessoal-blueyellow:</b> Mesmo projeto, implementado em Python(Jango), com outra estilização e algumas outras variações.
-* <b>blog-pessoal-blue:</b> Mesmo projeto, implementado em .NET, com outra estilização e algumas outras variações.
-* <b>blog-pessoal-...:</b> Alguma outra tecnologia relevante pro mercado, para exercitar CRUD.
+## :rocket: Rodando o projeto:<br>
+    
+<li>Link Github: <a href="https://github.com/argelcapela/te-amo-mil-milhoes-frontend">Link</a></li>
+<li>Link da Documentação Backend(API/Swagger) do Projeto: <a href="https://argelcapela.github.io/blog-pessoal-red-backend/">Link</a></li>
+<li>Link da Documentação Frontend(Angular) do Projeto: <a href="https://argelcapela.github.io/blog-pessoal-red-backend/">Link</a></li>
+<li>Link do Frontend:  <a href="https://argelcapela.github.io/blog-pessoal-red-backend/">Link</a></li>
+<li>Link do Backend:  <a href="https://argelcapela.github.io/blog-pessoal-red-backend/">Link</a></li>
+ 
+</div>
+<div class="row">
 
-## :handshake: Colaboradores
+## :soon: Implementação futura:<br>
+<li><b>redblack:</b> Mesma estrutura desse projeto, implementado em PHP PURO ou LARAVEL, com outra estilização e algumas outras variações.</li>
+<li><b>green:</b> Mesma estrutura desse projeto, implementado em NodeJS e React, com outra estilização e algumas outras variações.</li>
+<li><b>blueyellow:</b> Mesma estrutura desse projeto, implementado em Python(Jango), com outra estilização e algumas outras variações.</li>
+<li><b>blue:</b> Mesma estrutura desse projeto, implementado em .NET, com outra estilização e algumas outras variações.</li>
+<li>Mesma estrutura em alguma outra tecnologia relevante pro mercado, para exercitar CRUD.</li>
+    
+</div>
+<div class="row">
+    
+
+## :handshake: Colaboradores:<br>
 <table>
   <tr>
     <td align="center">
@@ -53,6 +81,11 @@ Link do Backend:  https://blog-pessoal-red-backend.herokuapp.com/ <br>
     </td>
   </tr>
 </table>
+</div>
+<div class="row">
+    
+## :dart: Status do projeto:<br>
 
-## :dart: Status do projeto
-:technologist: Finalizado em versão 1.0 (red-reality)
+<li>Finalizado em versão 1.0</li>
+    
+</div>
